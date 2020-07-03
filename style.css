@@ -497,14 +497,12 @@ background:url("images/main-img3.jpg") 100% no-repeat cover;
 			}
 			#nav-bar ul{
 				display: flex;
-				justify-content: center;
+				justify-content:space-around;
 			}
 			#nav-bar i{
 				display: none;
 			}
-			#nav-bar a{
-				padding: 10px 3%;
-			}
+			
 			#nav-bar span{
 				display: inline-block;
 			}
