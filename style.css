@@ -294,6 +294,11 @@ background:url("images/main-img3.jpg") 100% no-repeat cover;
 			border:none;
 			background-color: #464343;
 			outline:none;
+			text-shadow:1px 1px 3px #85929E;
+		}
+		form>button:hover{
+			box-shadow: 2px 2px 10px 2px #00bcd4;
+			border-radius: 15px;
 		}
 		footer{
 			display: flex;
