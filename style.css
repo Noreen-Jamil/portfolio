@@ -1,5 +1,4 @@
-
-		*{
+*{
 			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
@@ -18,7 +17,7 @@
 		 	width: 530%;
 		 	background-color: #2f2f2f;
 		 	position: relative;
-		 	animation: moveLeft 2s linear forwards 3s; 
+		 	animation: moveLeft 2s linear forwards 5s; 
 		 	
 		 }
 		 @keyframes moveLeft{
@@ -27,7 +26,6 @@
 		 	}
 		 	to{
 		 		left:-100%;
-		 		/*transform: -100%;*/
 		 	}
 		 }
 
@@ -139,6 +137,9 @@
 			top:0;
 			box-shadow: 1px 1px 6px 2px #4e4c4c;
 			z-index: 1;
+			}
+			#hamburger img, #hamburger>i{
+				display: none;
 			}
 			#nav-bar ul{
 				width:100%;
@@ -522,25 +523,81 @@
 			top:0;
 
 			}
-			#nav-bar li{
+			#hamburger{
+				display: flex;
+				justify-content: space-between;
+				align-items: center !important;
+				width:100%;
+				position: relative;
+				padding:3px ;
+
+			}
+			#hamburger img{
+				display: block;
+				width: 120px;
+			}
+			
+			#hamburger>i{
+				display: inline-block !important;
+				font-size: 25px;
+				margin-bottom: 0;
+				border-radius: 50px;
+				padding:3px;
+				margin-right: 5px;
+				background-color:#24292e;
+			}
+			#hamburger>ul{
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				background-color: #464343;
+				position: absolute;
+				right:0;
+				top:40px;
+				box-shadow: inset 1px 0 6px 1px #4e4c4c;
+				display: none !important;
+			}
+			#hamburger ul i{
+				display: none;
+			}
+			
+			#hamburger a{
+				display: block;
+				width:100%;
+				padding:10px 15px;
+
+			}
+			#hamburger i:hover {
+				box-shadow: 2px 2px 10px 2px #00bcd4;
+			}
+			#hamburger:hover ul{
+				display: flex !important;
+				animation: navDisplay 1s linear; 
+			}
+			@keyframes navDisplay{
+				from{
+					right:-100%;
+				}
+				to{
+					right:0;
+				}
+			}
+
+			#hamburger a:hover{
+				background-color: #2f2f2f ;
+				border:4px solid #464343;
+			}
+			#hamburger li{
 				display: inline-block;
 				padding:0 0;
 				margin-bottom: 0;
 			}
 
-			#nav-bar a{
-				padding:10px 15px;
-			}
-			#nav-bar ul{
-				display: flex;
-				justify-content: space-around;
-				
-			}
-			#nav-bar i{
-				display: none;
-			}
 			
-			#nav-bar span{
+			
+			
+			
+			#hamburger span{
 				display: inline-block;
 			}
 			
