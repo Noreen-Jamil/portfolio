@@ -18,7 +18,7 @@
 		 	width: 530%;
 		 	background-color: #2f2f2f;
 		 	position: relative;
-		 	animation: moveLeft 2s linear forwards 5s; 
+		 	animation: moveLeft 2s linear forwards 3s; 
 		 	
 		 }
 		 @keyframes moveLeft{
