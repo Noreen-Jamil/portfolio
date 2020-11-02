@@ -14,7 +14,8 @@
 		 #wrapper{
 		 	
 		 	height:98vh;
-		 	width: 530%;
+			 width: 530%;
+			 width:570%;
 		 	background-color: #2f2f2f;
 		 	position: relative;
 		 	animation: moveLeft 2s linear forwards 5s; 
@@ -362,7 +363,7 @@
 		}
 		#main-project-wrapper{
 			display: grid;
-			grid-template-columns: repeat(3, 300px);
+			grid-template-columns: repeat(4, 300px);
 			grid-gap:7%;
 			justify-content: space-around;
 			align-items: center;
@@ -617,6 +618,7 @@
 		#portfolio{
 			align-items: flex-start !important;
 			padding:10% 4% 20% 4%;
+			align-content: flex-start;
 
 		}
 		#portfolio h1{
@@ -626,6 +628,7 @@
 			grid-template-columns: repeat(2, 300px);
 			grid-gap:7%;
 			width:100%;
+			align-content: flex-start;
 		}
 		
 		 	
@@ -656,7 +659,7 @@
 				width:100%;
 			}
 			#portfolio{
-				padding-bottom: 30% ;
+				padding-bottom: 70% ;
 
 			}
 			
